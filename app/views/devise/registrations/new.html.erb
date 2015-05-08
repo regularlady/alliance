@@ -1,0 +1,34 @@
+<%= devise_error_messages! %>
+
+<div class="form-style">
+	<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { role: 'form', class: "pure-form pure-form-stacked"}) do |f| %>
+	    
+	    <fieldset>
+			<h3>Sign up</h3>
+
+		      	<%= f.label :first_name %>
+		      	<%= f.text_field :first_name, :autofocus => true %>
+
+		      	<%= f.label :last_name %>
+		     	<%= f.text_field :last_name %>
+
+			    <%= f.label :email %>
+			    <%= f.email_field :email %>
+				
+		    <div class='pure-control-group'>
+	     	  	<%= f.label :title %>
+	     	 	<%= f.select(:title, options_for_select([['Financial Capability', 'Financial Capability'], ['Homeownership', 'Homeownership'], ['Workforce', 'Workforce'], ['SparkPoint', 'SparkPoint'], ['YMCA', 'YMCA'], ['Other', 'Other']])) %>
+		    </div>
+
+			    <%= f.label :password %>
+			    <%= f.password_field :password %>
+
+			    <%= f.label :password_confirmation %>
+			    <%= f.password_field :password_confirmation %>
+
+			<div class='actions'>
+		     	<%= f.submit 'Sign up', class: 'pure-button pure-button-primary' %>
+			</div>
+		</fieldset>
+	<% end %>
+</div>

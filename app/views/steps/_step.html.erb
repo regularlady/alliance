@@ -1,0 +1,27 @@
+<h5>
+	<% if current_page?(action_plan_path) %>
+		Step <%= format_counter(step_counter) %>: <%= step.description %>
+
+	<%= step.due_by %>
+  <% if step.complete == true %>     
+  	<span class="icon-award"></span>
+  <% else %>
+  <span class="icon-flag-checkered"></span>
+  <% end %>
+		<%= link_to edit_step_path(step) do %>
+			<span class="icon-pencil-1"></span>
+		<% end %>
+	<% end %>
+</h5>
+
+<h6>
+	<% if current_page?(action_plan_path) %>
+		Add messages
+		<%= link_to new_step_text_message_path(step) do %>
+		<span class="icon-plus-circled"></span>
+		<% end %>
+	<% end %>
+</h6>
+
+<%= render step.text_messages %>
+

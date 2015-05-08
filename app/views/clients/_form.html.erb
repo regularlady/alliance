@@ -1,0 +1,36 @@
+<div>
+	<%= form_for @client, html: {role: 'form', class: "pure-form pure-form-stacked"} do |f| %>
+		
+		<fieldset>
+
+			<%= f.label :first_name, "First name *" %>
+			<%= f.text_field :first_name, :autofocus => true,
+				placeholder: "Enter first name" %>
+
+			<%= f.label :last_name, "Last name *" %>
+			<%= f.text_field :last_name, 
+				placeholder: "Enter last name" %>
+
+			<%= f.label :phone, "Phone *" %>
+			<%= f.text_field :phone, 
+				value: "+1" %>
+
+			<%= f.label :contact_id, "MEDA Contact ID" %>
+			<%= f.text_field :contact_id, 
+				placeholder: "Enter MEDA Contact ID" %>
+
+			<%= f.label :email %>
+			<%= f.email_field :email, 
+				placeholder: "Enter email" %>
+
+			<%= f.label :salesforce %>
+			<%= f.text_field :salesforce_id, 
+				placeholder: "Enter Salesforce ID" %>
+
+			<div class='actions'>
+				<%= f.submit "Save", class: 'pure-button pure-button-primary' %>
+				<%= link_to "Cancel", :back, class: 'pure-button' %>
+			</div>
+		</fieldset>
+	<% end %>
+</div>

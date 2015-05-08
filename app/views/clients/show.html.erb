@@ -1,0 +1,32 @@
+
+ <div class="pure-g">
+  	<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+		<%= render partial: "client_sidebar", object: @client %>
+
+		<div class="sidebar">
+			<%= link_to "Create New Plan", new_client_action_plan_path(@client),
+				class: 'pure-button pure-button-primary block' %>
+
+	    <%= link_to "Send Welcome Text", welcome_clients_path(:client => @client.id), method: :post, class: 'pure-button button-green block', data: { confirm: 'Are you sure you want to send a welcome text?' } %>
+
+	    <%= link_to "Delete Client", @client, method: :delete, class: 'pure-button button-yellow block', data: { confirm: 'Are you sure you want to delete this client?' } %>
+    </div>
+
+	</div>
+
+	<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
+	    <div class="main padding">
+				<h3> Action Plans </h3>
+				<hr/>
+				<%= render @client.action_plans %> 
+					<div class="space"></div>
+				<h3> Outgoing Text Message Feed (From You) </h3>
+				<hr/>
+				<%= render @outgoing_texts.sort_by(&:scheduled_date) %>
+					<div class="space"></div>
+				<h3> Incoming Text Message Feed (From Client) </h3>
+				<hr/>
+				<%= render @incoming_texts.sort_by(&:scheduled_date) %>
+		</div>
+	</div>
+</div>

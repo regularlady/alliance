@@ -1,0 +1,29 @@
+<div class='well'>
+	<div class='authform'>
+		<div class="form-style">
+			<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { role: 'form', class: "pure-form pure-form-stacked" }) do |f| %>
+				
+				<fieldset>
+					<h3>Sign in</h3>
+
+					    <%= f.label :email %>
+					    <%= f.email_field :email, autofocus: true %>
+
+					    <%= f.label :password %>
+					    <%= f.password_field :password, autocomplete: "off" %>
+
+					  <% if devise_mapping.rememberable? -%>
+						    <div class='pure-checkbox'>
+						      <%= f.check_box :remember_me, class: 'inline-display' %>
+						      <%= f.label :remember_me, class: 'inline-display' %>
+						    </div>
+					  <% end -%>
+						<div class='actions'>
+							<%= f.submit 'Sign in', class: 'pure-button pure-button-primary' %>
+						</div>
+				</fieldset>
+			<% end %>
+			<%= render "devise/shared/links" %>
+		</div>
+	</div>
+</div>	

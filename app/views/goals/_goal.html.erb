@@ -1,0 +1,27 @@
+	<h4>
+		Goal <%= format_counter(goal_counter) %>: <%= goal.description %>
+		<% if current_page?(action_plan_path) %>
+			<%= link_to edit_goal_path(goal) do %>
+				<span class="icon-pencil-1"></span>
+			<% end %>
+		<% end %>
+	</h4>
+
+	<h6>
+		<% if current_page?(action_plan_path) %>
+			Add steps to Goal 		
+			<%= link_to new_goal_step_path(goal) do %>
+			<span class="icon-plus-circled"></span>
+			<% end %>
+		<% end %>
+	</h6>
+	<%= render goal.steps %>
+<% if goal.steps.present? %>
+	<% if current_page?(client_path) %>
+		<div>
+			Due Date Status Messages (Sent / Total)
+		</div>
+	<% end %>
+<% end %>
+
+

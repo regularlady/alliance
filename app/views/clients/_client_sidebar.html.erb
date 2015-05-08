@@ -1,0 +1,26 @@
+<div class="sidebar">
+	<%= div_for @client do%>
+		<h2>
+			<%= link_to "#{@client.first_name} #{@client.last_name}", client_path(@client.id) %>
+		</h2>
+
+		<h4 class="narrow">
+			MEDA Client
+		</h4>
+		<h4 class="narrow">
+			<%= @client.email %>
+		</h4>
+		<h4 class="narrow">
+			<%= @client.phone %>
+		</h4>
+		<h4 class="narrow">
+			Contact ID:<%= @client.contact_id %>
+		</h4>
+		<h4 class="narrow">
+			Salesforce ID:<%= @client.salesforce_id %>
+		</h4>
+		<h4 class="narrow">
+			<%= link_to "edit", edit_client_path(@client) %>
+		</h4>	
+	<% end %>
+</div>

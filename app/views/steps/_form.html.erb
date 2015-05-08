@@ -1,0 +1,21 @@
+<%= form_for([@goal, @step], html: { class: "pure-form pure-form-stacked" }) do |f| %>
+  <div class="form-group">
+    <%= f.label "Step description" %>
+    <%= f.text_field :description, class: 'pure-input', placeholder: "Enter step description" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label "Scheduled Date" %>
+    <%= f.date_field :due_by, class: 'pure-input', placeholder: "Enter step due date" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :complete %>
+    <%= f.check_box :complete %>
+  </div>
+
+  <div>
+    <%= f.submit "Save step", class: 'pure-button pure-button-primary' %>
+    <%= link_to "Cancel", :back, class: 'btn btn-default' %>
+  </div>
+<% end %>

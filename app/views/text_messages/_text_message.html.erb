@@ -1,0 +1,20 @@
+<%= div_for text_message do %>
+  <h5>
+    <span class="icon-mail"></span>
+      <%= text_message.content %>
+    </br>
+    Date: <%= text_message.scheduled_date %>
+    Time: <%= text_message.scheduled_time.strftime("%I:%M %p") %>
+    Sent Status:
+    <% if text_message.sentstatus == true %>     
+      <span class="icon-award"></span>
+    <% else %>
+      <span class="icon-flag-checkered"></span>
+      <%= link_to edit_text_message_path(text_message) do %>
+        <span class="icon-pencil-1"></span>
+      <% end %>
+    <% end %>
+  </h5>
+<% end %>
+
+

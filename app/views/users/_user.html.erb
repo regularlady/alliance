@@ -1,0 +1,13 @@
+<h2>
+	<%= link_to "#{current_user.first_name} #{current_user.last_name}", edit_user_registration_path(current_user) %>
+</h2>
+
+<h4 class="narrow">
+	<%= current_user.title %>
+</h4>
+<h4 class="narrow">
+	<%= current_user.email %>
+</h4>
+<h4 class="narrow">
+	<%= link_to "edit", edit_user_registration_path(current_user) %>
+</h4>

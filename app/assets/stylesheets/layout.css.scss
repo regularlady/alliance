@@ -1,0 +1,132 @@
+header {
+  background-color: #7EA869;
+  height: 50px;
+  margin: 0;
+  padding: 10px 40px;
+  max-width: 100%;
+}
+
+h1 {
+  float: left;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.wrapper {
+  min-width: 360px;
+}
+
+.nav {
+  margin: 0 auto;
+//  width: 1220px;
+}
+
+//.nav ul {
+//  float: right;
+//}
+
+.nav ul li {
+  display: inline-block;
+  float: right;
+}
+
+.nav ul li a{
+  color: #E9E9E9;
+  padding: 0px 20px;
+}
+
+.nav ul li a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+#dash {
+  font-size: 20px;
+  margin-top: -3px;
+}
+
+#dashboard {
+  float: left;
+  width: 60%;
+}
+
+#head-client {
+  float: left;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 20px;
+  width: 100%;
+}
+
+#head-client p {
+  float: left;
+  padding-top: 8px;
+  margin: 0;
+}
+
+#show-client-form{
+  background-color: #1CA634;
+  border-radius: 4px;
+  display: inline-block;
+  float: right;
+  padding: 4px 0px 8px 0px;
+  text-align: center;
+  width: 114px;
+  color: white;
+  font-size: 19px;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+#submit {
+  background-color: #1CA634;
+  border-radius: 2px;
+  color: white;
+  outline: none;
+  -moz-box-shadow: 0 0 3px #333;
+  font-weight: 300;
+  height: 45px;
+  margin-left: 5px;
+  padding: 10px;
+  width: 25%;
+}
+
+.client-list {
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.client-list table {
+  list-style: none;
+  margin: 0;
+  padding-left: 4px;
+  width: 100%;
+}
+
+.client-list th {
+  border-bottom: 1px solid black;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  height: 45px;
+  text-align: left;
+}
+
+.client-list tr {
+  border-bottom: 1px dotted black;
+}
+
+.client-list td {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  height: 50px;
+  text-align: left;
+  width: 250px;
+}
+
+.client-list td a:hover {
+  color: #9E9E9E;
+  text-decoration: none;
+}

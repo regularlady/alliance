@@ -1,0 +1,12 @@
+<div class="col-md-8">
+<%= form_for([@client, @action_plan]) do |f| %>
+	<div class="form-group">
+		<%= f.label :description %>
+		<%= f.text_field :description, class: 'form-control',
+			placeholder: "Enter description" %>
+	</div>
+	<div class="form-group">
+		<%= link_to "Cancel", :back, class: 'btn btn-default' %>
+		<%= f.submit "Save", class: 'btn btn-success' %>
+  </div>
+<% end %>

@@ -1,0 +1,8 @@
+<%= div_for action_plan do %>
+<h3>
+	<%= "#{action_plan.description}" %>
+	<%= link_to action_plan_path(action_plan) do %>
+			<span class="icon-pencil-1"></span>
+	<% end %>
+</h3>
+<% end %>

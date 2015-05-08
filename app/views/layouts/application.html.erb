@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="welcome">
+	<head>
+	  <title>alliance</title>
+	  <%= favicon_link_tag 'pulse.ico' %>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>			    
+		<link rel="stylesheet" href="https://cdn.rawgit.com/yahoo/pure-release/v0.6.0/grids-responsive-min.css">	
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+		<%= csrf_meta_tags %>
+		
+	</head>
+	
+	<% if user_signed_in? %>
+		<body class="signed-in">
+
+			<header>
+			  <%= render 'layouts/header' %>
+			</header>
+		
+			<div class='container'>
+				<%= render 'layouts/messages' %>
+			 	<%= yield %>
+			</div>
+
+		</body>
+
+
+	<% else %>
+		<body class="not-signed-in">
+
+			<header>
+			  <%= render 'layouts/header' %>
+			</header>
+		
+			<div class='container'>
+				<%= render 'layouts/messages' %>
+			 	<%= yield %>
+			</div>
+
+		</body>
+	<% end %>
+</html>

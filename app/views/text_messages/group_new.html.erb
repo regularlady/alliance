@@ -1,0 +1,40 @@
+<div class="pure-g">
+  <div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+    <h3></h3>
+  </div>
+
+<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
+  <div class="main padding">
+    <h2>New Group Text</h2>
+    <%#= form_for @text_message, class: "pure-form pure-form-stacked", url: group_create_path, html: { method: :post } do |f| %>
+    <%= form_for @text_message, url: group_create_path, html: {role: 'form', class: "pure-form pure-form-stacked"} do |f| %>
+      <div class="form-group">
+        <%= f.label "Select your clients" %>
+        <% @clients.each do |client| %>
+            <p><%= check_box_tag 'client_id[]', client.id -%>
+            <%= h client.last_name -%></p>
+        <% end %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Enter text message" %>
+        <%= f.text_field :content, :size => 80, class: 'pure-input',
+                placeholder: "What would you like to say?" %>
+      </div>
+            
+      <div class="form-group">
+        <%= f.label "Enter scheduled date (leave date blank to send now)" %>
+        <%= f.date_field :scheduled_date, class: 'pure-input' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label "Enter scheduled time (pst)" %>
+        <%= f.time_field :scheduled_time, class: 'pure-input' %>
+      </div>      
+      
+      <div class="form-group">
+        <%= f.submit "Save Group Message", class: 'pure-button pure-button-primary' %>
+        <%= link_to "Cancel", :back %>
+      </div>
+    <% end %>  
+  </div>
+</div>

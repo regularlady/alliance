@@ -1,0 +1,23 @@
+<div class="pure-g">
+  <div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+		<%= render partial: "clients/client_sidebar", object: @client %>
+  </div>
+
+  <div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
+      	<div class="main padding">
+
+		<%= render 'navbar' %>
+	
+			<div>
+				<%= form_for([@client, @action_plan], html: { class: "pure-form pure-form-stacked" } ) do |f| %>
+					<div class= "inline">
+							<%= f.label :title_of_action_plan %>
+							<%= f.text_field :description, class: 'pure-input',
+								placeholder: "Enter title of action plan (e.g., 12/31/14 Meeting with Maria)" %>
+						<%= f.submit "Create action plan", class: 'pure-button pure-button-primary' %>
+				  </div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>Hey, <%= @coach_email.coach_firstname %>!</p>
+    <p>One of your clients is reaching out to you. Here is what they have to say:</p>
+    <p>Client name: <%= @coach_email.client_firstname %> <%= @coach_email.client_lastname %> </p> 
+    <p>Message: <%= @coach_email.content %> </p>
+    <p>Please respond to your client by texting them via alliance or giving them a call.</p>
+    <p>Cheers,</p>
+    <p>The Alliance App Team</p>
+  </body>
+</html>

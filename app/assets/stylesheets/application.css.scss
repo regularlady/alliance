@@ -1,0 +1,223 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/*@import "bootstrap-sprockets";*/
+/*@import "bootstrap";*/
+@import "font-awesome"; 
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+body.not-signed-in {
+    background: image-url("intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body.signed-in {
+    background-color: rgb(255, 255, 255);
+}
+
+body.signed-in,
+body.not-signed-in {
+    font-family: 'Lato', "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, 
+.pure-g {
+    font-family: 'Lato', "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+    font-weight: 400;
+
+    -webkit-margin-before: .5em;
+    -webkit-margin-after: .5em;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin-left: 0px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+h5 {
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+
+h6 {
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+h4.narrow {
+    margin: 2px;
+}
+
+.inline-display {
+    display: inline !important;
+}
+
+.block {
+    float: left;
+    clear:left;
+    margin-top: 10px;
+}
+
+header {
+    background-color: white;  
+    padding: 10px; 
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #E9E9E9; 
+}
+
+a {
+    color: rgb(0,129,196);
+    text-decoration: none;
+}
+
+.sidebar {
+    padding: 20px;
+    float: left;
+}
+
+.sidebar-right {
+    padding: 20px;
+    float: right;
+}
+
+.main {
+}
+
+.padding {
+    padding: 20px 0px 0px 0px;
+}
+
+.float-right {
+    float: right;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.add {
+    float: right;
+}
+
+.form-style {
+    padding: 20px;
+    margin: 40px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; 
+    background-color: rgba(255,255,255, 0.5);
+}
+
+
+.align-center {
+    text-align: center;
+}
+
+h3.margin {
+    margin: 0px 0px 20px 0px;
+}
+
+.pure-form-stacked input[type=text], .pure-form-stacked input[type=password], .pure-form-stacked input[type=email], .pure-form-stacked input[type=url], .pure-form-stacked input[type=date], .pure-form-stacked input[type=month], .pure-form-stacked input[type=time], .pure-form-stacked input[type=datetime], .pure-form-stacked input[type=datetime-local], .pure-form-stacked input[type=week], .pure-form-stacked input[type=number], .pure-form-stacked input[type=search], .pure-form-stacked input[type=tel], .pure-form-stacked input[type=color], .pure-form-stacked select, .pure-form-stacked textarea {
+    margin: .25em 0em 1em 0em;
+}
+
+.button-yellow {
+    background: rgb(236, 190, 19); /* this is a yellow */
+    color: white;
+
+}
+
+.button-green {
+    background: rgb(147, 164, 42); /* this is an green */
+    color: white;
+
+}
+
+/*flash*/
+
+.alert {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+
+.space { margin-top: 75px; }
+
+.pure-menu {
+    ul{
+        list-style-type: none;
+    }
+    li{
+        display: inline;
+        padding: 10px;
+    }
+    a:hover{
+        color: #000;
+    }
+}
