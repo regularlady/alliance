@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+require 'sidekiq/web'
+
   devise_for :users, :path => '',
     :path_names => {:sign_in => 'login', :sign_out => 'logout'}, 
     :controllers => { registrations: 'registrations' }
@@ -27,6 +29,10 @@ Rails.application.routes.draw do
     collection do
       post :welcome
     end
+  end
+
+  authenticate :user do
+    mount Sidekiq::Web => '/sidekiq'
   end
 
   get 'group_new' => 'text_messages#group_new' 
