@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.1.3'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 gem 'pg'
@@ -62,6 +60,7 @@ group :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'database_cleaner'
   gem 'factory_girl'
+  gem 'simplecov'
 end
 
 gem 'twilio-ruby'

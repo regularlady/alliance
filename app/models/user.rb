@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
   validates :title, presence: true
-  validates :email, :presence => true, :email => true
+  validates :email, :presence => true
  
  def admin?
    role == 'admin'

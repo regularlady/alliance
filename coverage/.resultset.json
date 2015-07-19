@@ -1,0 +1,147 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/brittanymartin/projects/alliance/app/models/user.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/brittanymartin/projects/alliance/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/brittanymartin/projects/alliance/app/helpers/devise_helper.rb": [
+        1,
+        1,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/Users/brittanymartin/projects/alliance/app/helpers/goal_helper.rb": [
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/brittanymartin/projects/alliance/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/brittanymartin/projects/alliance/app/models/action_plan.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/brittanymartin/projects/alliance/app/models/client.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/brittanymartin/projects/alliance/app/models/coach_email.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/brittanymartin/projects/alliance/app/models/goal.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/brittanymartin/projects/alliance/app/models/step.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/brittanymartin/projects/alliance/app/models/text_message.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1437340225
+  }
+}
