@@ -1,7 +1,7 @@
 class Client < ActiveRecord::Base
   belongs_to :user
 
-  has_many :action_plans
+  has_many :action_plans, dependent: :destroy
   has_many :text_messages
 
   validates :first_name, presence: true

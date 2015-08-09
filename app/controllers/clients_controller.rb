@@ -64,7 +64,7 @@ class ClientsController < ApplicationController
     end
   end
 
-  def welcome 
+  def welcome
     @client = current_user.clients.find(params[:client])
     @text_message=TextMessage.create!(scheduled_date: Date.today, client_id: @client.id, content: "Welcome to #{ENV['NON_PROFIT']}, #{@client.first_name}. Please save this number as #{@client.user.first_name}. I'll be texting you with reminders. Text back if you need help!", phone: @client.phone, incoming_message: "false", sentstatus: "false")
     @text_message.scheduled_time = Time.now.in_time_zone("Pacific Time (US & Canada)")

@@ -12,7 +12,7 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  config.include Devise::TestHelpers, type: :controller 
+  config.include Devise::TestHelpers, type: :controller
   config.include Devise::TestHelpers, type: :view
   config.include Warden::Test::Helpers
   config.include FactoryGirl::Syntax::Methods

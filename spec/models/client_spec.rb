@@ -25,7 +25,7 @@ describe Client do
     blank_client_phone.errors.messages[:phone].first.should == "can't be blank"
   end
 
-  it "deletes the Client if the associated user is deleted" do
+  it "does not delete the client if the associated user is deleted" do
     user = User.create(email: "hello@alliance.org", password: "helloworld")
     user_client = Client.create(first_name: "Rachel", last_name: "Green", phone: "111-123-1234")
     user.clients << user_client

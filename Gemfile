@@ -8,7 +8,7 @@ gem 'pg'
 gem 'rails_12factor', group: :production
 
 # User authentication
-gem 'devise' 
+gem 'devise'
 
 # Background worker of choice
 # gem 'sidekiq', '3.2.5'
@@ -59,13 +59,9 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'rspec-rails', '~> 3.0'
   gem 'database_cleaner'
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'simplecov'
 end
 
 gem 'twilio-ruby'
 gem 'newrelic_rpm'
-
-
-
-
