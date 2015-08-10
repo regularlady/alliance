@@ -7,22 +7,20 @@
 
   <div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
       <div class="main padding">
-        <% if policy(Client.new).create? %>
         <%= link_to "Create New Client", new_client_path, class: 'pure-button pure-button-primary' %>
         <%= link_to "Create Group Text", group_new_path, class: 'pure-button button-green' %>
-        <% end %>
 
       <div ng-controller="clientsController">
 
         <h4> Search existing clients </h4>
-        
+
         <form class="pure-form">
-          <input type="text" placeholder="Search by any field..." ng-model="query" autofocus class="pure-input"> 
+          <input type="text" placeholder="Search by any field..." ng-model="query" autofocus class="pure-input">
         </form>
 
         <h4> Showing {{filtered.length}} clients</h4>
 
-        <table class="pure-table pure-table-horizontal"> 
+        <table class="pure-table pure-table-horizontal">
           <thead>
             <tr>
               <td>Name</td>

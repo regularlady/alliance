@@ -1,7 +1,20 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/brittanymartin/projects/alliance/app/models/role.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
       "/Users/brittanymartin/projects/alliance/app/models/user.rb": [
+        1,
         1,
         1,
         1,
@@ -323,6 +336,6 @@
         null
       ]
     },
-    "timestamp": 1439157101
+    "timestamp": 1439160390
   }
 }

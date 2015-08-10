@@ -5,13 +5,11 @@ class ClientsController < ApplicationController
 
   def index
     @clients = current_user.clients.order(:last_name)
-    authorize @clients
     respond_with @clients
   end
 
   def new
     @client = current_user.clients.new
-    authorize @client
   end
 
   def create
@@ -37,12 +35,10 @@ class ClientsController < ApplicationController
 
   def edit
     @client = current_user.clients.find(params[:id])
-    # authorize @client
   end
 
   def update
     @client = current_user.clients.find(params[:id])
-    # authorize @client
     if @client.update_attributes(client_params)
       flash[:notice] = "Success! Client was updated."
       redirect_to @client

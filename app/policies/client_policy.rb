@@ -1,2 +1,0 @@
- class ClientPolicy < ApplicationPolicy
- end
