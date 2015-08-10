@@ -21,6 +21,13 @@ RSpec.describe ClientsController, type: :controller do
     end
   end
 
+  describe "create for clients" do
+    it "creates a client" do
+      get :new, id: @client
+      response.should be_success
+    end
+  end
+
   describe "show for clients" do
     it "shows an client" do
       get :show, id: @client
@@ -35,7 +42,7 @@ RSpec.describe ClientsController, type: :controller do
     end
   end
 
-  describe "editing an client" do
+  describe "editing a client" do
     it "edits an client" do
       get :edit, id: @client
       response.should be_success
