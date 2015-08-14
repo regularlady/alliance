@@ -2,7 +2,7 @@
 
 Rails and AngularJS app originally designed for the Mission Economic Development Agency (MEDA) to enhance their financial capability coaches' ability to interact with and track the progress of their clients' action plans. We've opensourced the app so other non-profits can take advantage of it.
 
-More information can be found on the [wiki](https://github.com/brit200313/alliance)
+More information can be found on the [wiki](https://github.com/brit200313/alliance/wiki)
 
 ### Setup for Your Non-Profit
 
