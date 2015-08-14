@@ -8,6 +8,8 @@ More information can be found on the [wiki](https://github.com/brit200313/allian
 
 We welcome non-profits to fork the project to create a version for a client/coach business. You will need to have your local Rails dev environment setup, a [Twilio](www.twilio.org) account and a [Sendgrid](www.sendgrid.com) account.
 
+TODO: wiki article on how to deploy alliance
+
 ### Contribute
 
 Want to contribute to Alliance? We'd love to have you onboard. Please review the [Contributing as a Developer](https://github.com/brit200313/alliance/wiki/Contributing-as-a-Developer) guide to get started.
