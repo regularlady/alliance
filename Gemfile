@@ -11,7 +11,7 @@ gem 'devise'
 
 # Background worker of choice
 gem 'whenever', :require => false
-gem 'sidekiq', '3.2.5'
+gem 'sidekiq', '3.4.2'
 # if you require 'sinatra' you get the DSL extended to Object
 gem 'sinatra', '>= 1.3.0', :require => nil
 
