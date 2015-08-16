@@ -20,6 +20,8 @@ Then, follow the [Getting Started](https://github.com/Brit200313/alliance/wiki/S
 
 Want to contribute to Alliance? We'd love to have you onboard. Please review the [Contributing as a Developer](https://github.com/brit200313/alliance/wiki/Contributing-as-a-Developer) guide to get started.
 
+Spot an issue? Please open a new [Github Issue](https://github.com/Brit200313/alliance/issues) with as much detail as possible. 
+
 ### Special Thanks
 
 - [Melanie Gin](https://github.com/onelovelyname)
