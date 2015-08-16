@@ -8,9 +8,13 @@ More information can be found on the [wiki](https://github.com/brit200313/allian
 
 ### Setup for Your Non-Profit
 
-We welcome non-profits to fork the project to create a version for a client/coach business. You will need to have your local Rails dev environment setup, a [Twilio](www.twilio.org) account and a [Sendgrid](www.sendgrid.com) account.
+We welcome non-profits to deploy their own copy of alliance for their non-profit. Before getting started, your organization will need a [Heroku](www.heroku.com) account, [Twilio for Non-Profits](www.twilio.org) account and a [Sendgrid](www.sendgrid.com) account. 
 
-TODO: wiki article on how to deploy alliance
+Once you have those, click the Deploy button. 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Brit200313/alliance)
+
+Then, follow the [Getting Started](https://github.com/Brit200313/alliance/wiki/Setting-Up-alliance-for-Your-Non-Profit) guide. 
 
 ### Contribute
 
