@@ -1,0 +1,6 @@
+{
+  "name": "alliance",
+  "description": "Client & coach communications app for nonprofits built in Rails",
+  "repository": "https://github.com/Brit200313/alliance",
+  "keywords": ["rails", "angular", "twilio"]
+}
