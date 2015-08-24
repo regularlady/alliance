@@ -44,7 +44,7 @@ GEM
     bower-rails (0.10.0)
     builder (3.2.2)
     cancancan (1.12.0)
-    celluloid (0.16.1)
+    celluloid (0.16.0)
       timers (~> 4.0.0)
     choice (0.2.0)
     chronic (0.10.2)
@@ -274,6 +274,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.0)
   bower-rails
   cancancan (~> 1.10)
+  celluloid (= 0.16.0)
   coffee-rails (~> 4.0.0)
   database_cleaner
   devise
