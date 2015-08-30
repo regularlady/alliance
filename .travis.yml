@@ -1,0 +1,8 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: LxoUY0Ni+t62DvKoKhwhm2aJK0Gr974yxUaCKUxnJ8c+XtzZrEKTBgDfO9usN4sRVFMlMAByJ4TBQtb64zK5hyM+LkNwI2tyoGYyWMUBx1iSH2/dPTzJL/v0AVa3LgzruzwbqAM2koSFVTkYFvllA2SWH6H1Oq5cJR/r7twGl3ffXVE2YUWFnEHHutEVL+gIMMEIcY3oNg41legSth4joVDAV7wp5NK9HrHbMXnVNf1M7jMLfA/EkXvRwuZUW7W9mQyuqONadABtO7EIHkd6ZqusjYzHUgNU+Y360reONySiWfNY6Szl7aSdNwsNPTOy+/lf7Os3+3LytoJUjspiGEEtSUaJxrdXn819f+NCEjv7tVdlDj+Exnk+aSrsodErCPx1kCPtt//uC/zB3gccjbrRq4cHJloXIuK231rym3657yrgkWkv5tX03Xxd9GBiCC7iArxSvxGGXEwoTsuWqES2FQgejxo1PLAgDWX9ec3aLbP1WnExwfD77+LB54gK7lmgLqG01lzn043RKw5Z+Up8vqgPFkZ+ClSV1IFsr+m4M9o8mo6DURlHSGbJHjRAZMNezoP679cLgHNow84ezQ4FlxW6k1AFFIG2ZeXTMS6noWOmVosHBgP1if+iGJbRWykXCHbRj7E3N8Wp4mZjNlgSQ/gTK8IykLNDkGjiQ9Y=
+  app: alliance-nonprofit
+  on:
+    repo: Brit200313/alliance
+  run: "rake db:migrate"

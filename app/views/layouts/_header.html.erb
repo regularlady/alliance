@@ -5,7 +5,7 @@
 	  	<li><%= link_to "Hello, #{current_user.first_name}!", edit_user_registration_path(current_user) %></li>
 			<li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
 		</ul>
-	</div>	
+	</div>
 <% else %>
 	<div class="pure-menu pure-menu-open pure-menu-horizontal">
     <%= link_to image_tag('alliance.png'), root_path, { :class=> "inline-display pure-menu-heading" } %>
