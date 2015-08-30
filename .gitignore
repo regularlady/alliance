@@ -28,7 +28,5 @@
 # Ignore private local env vars
 config/application.yml
 
-# Ignore database.yml
-config/database.yml
 # Ignore application configuration
 /config/application.yml
